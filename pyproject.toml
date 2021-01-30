@@ -16,6 +16,7 @@ python = "^3.9"
 Jinja2 = "^2.11.2"
 toml = {version = "^0.10.2", optional = true}
 PyYAML = {version = "^5.4.1", optional = true}
+pydantic = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
