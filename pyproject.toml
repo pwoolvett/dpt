@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dpt"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Woolvett <pablowoolvett@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "dpt", from = "src" },
+]
+
+[tool.poetry.scripts]
+dpt = 'dpt.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^2.11.2"
+toml = {version = "^0.10.2", optional = true}
+PyYAML = {version = "^5.4.1", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.extras]
+toml = ["toml"]
+yaml = ["PyYAML"]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
